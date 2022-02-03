@@ -16,9 +16,10 @@ export default class PrimeMigration_0_2_2_PrimeRefinementIdFix extends Migration
             for(const embeddedItem of embeddedItems){
                 if ((embeddedItem.type === 'prime') || (embeddedItem.type === 'refinement')) {
                     if ((embeddedItem.data.sourceKey && !embeddedItem.data.metadata.sourceKey)){
-                        const itemData = itemDoc.data;
+                        let itemData = embeddedItem.data;
                         if (!itemData.metadata.sourceKey) {
                             itemData.metadata.sourceKey = itemData.sourceKey;
+                            embeddedItem.update(itemData);
                         }
                     }
                 }
