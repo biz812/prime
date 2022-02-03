@@ -4,8 +4,9 @@ import {isString} from "../util/support.js";
 import PrimeMigration_0_1_10 from "./PrimeMigration_0_1_10.js";
 import PrimeMigration_Item_0_2_0 from "./PrimeMigration_Item_0_2_0.js";
 import PrimeMigration_Actor_0_2_1 from "./PrimeMigration_Actor_0_2_1.js";
+import PrimeMigration_0_2_2_PrimeRefinementIdFix from "./PrimeMigration_0_2_2_PrimeRefinementIdFix.js";
 
-const MIGRATIONS = [PrimeMigration_0_1_10, PrimeMigration_Item_0_2_0, PrimeMigration_Actor_0_2_1];
+const MIGRATIONS = [PrimeMigration_0_1_10, PrimeMigration_Item_0_2_0, PrimeMigration_Actor_0_2_1, PrimeMigration_0_2_2_PrimeRefinementIdFix];
 
 MIGRATIONS.sort((a, b) => compareVersions(a.version, b.version));
 
