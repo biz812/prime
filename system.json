@@ -49,8 +49,8 @@
   "gridUnits": "ft",
   "primaryTokenAttribute": "health",
   "secondaryTokenAttribute": "power",
-  "url": "https://github.com/johnc303/prime/",
-  "manifest": "https://raw.githubusercontent.com/johnc303/prime/master/system.json",
-  "download": "https://github.com/johnc303/prime/blob/master/prime.zip?raw=true",
+  "url": "https://github.com/biz812/prime/",
+  "manifest": "https://raw.githubusercontent.com/biz812/prime/fix/test-gm/system.json",
+  "download": "https://github.com/biz812/prime/archive/refs/heads/fix/test-gm.zip?raw=true",
   "license": "LICENSE2.txt"
 }
